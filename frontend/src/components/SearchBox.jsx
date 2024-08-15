@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 const SearchBox = () => {
   const navigate = useNavigate();
   const { keyword: urlKeyword } = useParams();
-
-  // FIX: uncontrolled input - urlKeyword may be undefined
   const [keyword, setKeyword] = useState(urlKeyword || '');
+  const [isHovered, setIsHovered] = useState(false);
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -20,6 +18,11 @@ const SearchBox = () => {
     }
   };
 
+  const hoverStyle = {
+    backgroundColor: isHovered ? '#F3BF43' : 'transparent',
+    color: isHovered ? 'black' : 'white',
+  };
+
   return (
     <Form onSubmit={submitHandler} className='d-flex'>
       <Form.Control
@@ -28,9 +31,16 @@ const SearchBox = () => {
         onChange={(e) => setKeyword(e.target.value)}
         value={keyword}
         placeholder='Search Products...'
-        className='mr-sm-2 ml-sm-5'
-      ></Form.Control>
-      <Button type='submit' variant='outline-success' className='p-2 mx-2'>
+        className='mr-sm-2 ml-sm-5 w-8'
+      />
+      <Button
+        type='submit'
+        variant='outline-white'
+        className='p-2 mx-2 text-white'
+        style={hoverStyle}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         Search
       </Button>
     </Form>
