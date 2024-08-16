@@ -37,8 +37,8 @@ const Header = () => {
       <Navbar className="bg-custom" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <Navbar.Brand as={Link} to='/'>
-            <img src={logo} alt='ProShop' />
-            Some
+            <img src={logo} alt='meraki' />
+            meraki
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
