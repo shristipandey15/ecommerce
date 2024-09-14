@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <Container fluid style={{ backgroundColor: '#dc3545', color: 'white', padding: '3rem 0' }}>
+      <Container fluid style={{ backgroundColor: '#A72F30', color: 'white', padding: '3rem 0' }}>
         <Row className="text-center">
           <Col xs={12} sm={6} md={3} className="d-flex flex-column align-items-center">
             <h6 style={{ marginBottom: '1.5rem' }}>Company</h6>
