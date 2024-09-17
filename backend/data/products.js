@@ -1,6 +1,6 @@
 const products = [
   {
-    name: 'Yellow Ruffle Sari',
+    name: 'green Ruffle Sari',
     image: '/images/sari1.jpg',
     description:
       'A yellow ruffle sari with a heavy blouse features cascading ruffles in vibrant yellow fabric, paired with an intricately designed, heavily embellished blouse for a striking, elegant look.',
@@ -25,7 +25,7 @@ const products = [
   },
   {
     name: 'sari',
-    image: '/images/camera.jpg',
+    image: '/images/phone.jpg',
     description:
       'A yellow ruffle sari with a heavy blouse features cascading ruffles in vibrant yellow fabric, paired with an intricately designed, heavily embellished blouse for a striking, elegant look.',
     brand: 'meraki',
@@ -37,35 +37,35 @@ const products = [
   },
   {
     name: 'sari',
-    image: '/images/playstation.jpg',
+    image: '/images/phone.jpg',
     description:
       'A yellow ruffle sari with a heavy blouse features cascading ruffles in vibrant yellow fabric, paired with an intricately designed, heavily embellished blouse for a striking, elegant look.',
-    brand: 'Sony',
-    category: 'Electronics',
+    brand: 'Suit',
+    category: 'cloth',
     price: 399.99,
     countInStock: 11,
     rating: 5,
     numReviews: 12,
   },
   {
-    name: 'Logitech G-Series Gaming Mouse',
-    image: '/images/mouse.jpg',
+    name: 'suit',
+    image: '/images/phone.jpg',
     description:
-      'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
-    brand: 'Logitech',
-    category: 'Electronics',
+      'vibrant yellow fabric, paired with an intricately designed, heavily embellished blouse for a striking, elegant look',
+    brand: 'sanchi',
+    category: 'suit',
     price: 49.99,
     countInStock: 7,
     rating: 3.5,
     numReviews: 10,
   },
   {
-    name: 'Amazon Echo Dot 3rd Generation',
-    image: '/images/alexa.jpg',
+    name: 'Suit',
+    image: '/images/phone.jpg',
     description:
-      'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
-    brand: 'Amazon',
-    category: 'Electronics',
+      'vibrant yellow fabric, paired with an intricately designed, heavily embellished blouse for a striking, elegant look',
+    brand: 'Bibba',
+    category: 'suit',
     price: 29.99,
     countInStock: 0,
     rating: 4,

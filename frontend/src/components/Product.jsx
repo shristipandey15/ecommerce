@@ -23,7 +23,16 @@ const Product = ({ product }) => {
           />
         </Card.Text>
 
-        <Card.Text as='h3'> Rs{product.price}</Card.Text>
+        {/* <Card.Text as='h3'> Rs{product.price}</Card.Text> */}
+        <Card.Text as='h3'>
+  {new Intl.NumberFormat('ne-NP', {
+    style: 'currency',
+    currency: 'NPR',
+    minimumFractionDigits: 2
+  }).format(product.price)}
+</Card.Text>
+
+
       </Card.Body>
     </Card>
   );

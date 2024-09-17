@@ -5,8 +5,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
 import { useLogoutMutation } from '../slices/usersApiSlice';
 import { logout } from '../slices/authSlice';
-import SearchBox from './SearchBox';
-import logo from '../assets/logo.png'; // Assuming you already have the logo in this path
+
+import SearchBox from './SearchBox'; // Ensure this is correctly imported
+import logo from '../assets/logo.png'; 
 import { resetCart } from '../slices/cartSlice';
 import '../assets/styles/index.css';
 
@@ -40,7 +41,7 @@ const Header = () => {
             <img
               src={logo}
               alt='Meraki__'
-              style={{ width: '80px', height: '80px', objectFit: 'contain' }} // Adjust logo size here
+              style={{ width: '80px', height: '80px', objectFit: 'contain' }}
             />
             Meraki__
           </Navbar.Brand>
@@ -48,7 +49,6 @@ const Header = () => {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ms-auto'>
               <SearchBox />
-
               <Nav.Link
                 as={Link}
                 to='/cart'
